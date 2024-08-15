@@ -15,7 +15,10 @@ namespace Practice1
     {
         static void Main(string[] args)
             {
-            //primitiveTypes();
+            // uncomment any of the methods to run the corresponding code
+            // for each of the challenges.
+
+            primitiveTypes();
 
             //nonPrimitiveTypes();
 
@@ -27,7 +30,7 @@ namespace Practice1
 
             //workingWithText();
 
-            workingWithFiles();
+            //workingWithFiles();
         }
 
         public static void primitiveTypes()
@@ -45,7 +48,7 @@ namespace Practice1
             books.Add(new Book("Picture of Dorian Gray", "O. Wilde", 9780141439570));
 
             books[0].displayDetails();
-            Book.compareBooks(books[0], books[1]);
+            Book.compareBooks(books[1], books[2]);
         }
         public static void controlFlow()
         {
@@ -118,7 +121,8 @@ namespace Practice1
             
             var originPath = ".\\names.txt";
             var copyPath = "..\\..\\..\\namesAlphabetical.txt";
-            
+            //in VisualStudio current directory while executing is "\Practice1\bin\Debug\net8.0"
+            //but to see the resulting file in the Solution Explorer it has to be saved in "\Practice1"
             var names = File.ReadAllLines(originPath);
             Array.Sort(names);
             File.WriteAllLines(copyPath, names);

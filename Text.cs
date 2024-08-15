@@ -11,7 +11,7 @@ namespace Practice1
     {
         private  List<string> paragraphs = new List<string>();
         public void writeText() {
-            Console.WriteLine("Enter block of text. Type \'exit\' to finish.");
+            Console.WriteLine("Enter block of text. Type \'exit\' in a new line to finish.");
             var line = Console.ReadLine();
             while (line.ToLower() != "exit")
             {

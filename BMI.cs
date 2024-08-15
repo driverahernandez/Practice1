@@ -10,7 +10,6 @@ namespace Practice1
     {
         public static void bmiExercise()
         {
-            //Body Mass Index
             Console.WriteLine("Enter your weight in kilograms: ");
             var weight = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Enter your height in meters: ");

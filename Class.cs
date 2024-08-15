@@ -15,17 +15,12 @@ namespace Practice1
         public void inputGrades()
         {
             while(true){
-                Console.WriteLine("Type in the grade or enter to finish:");
+                Console.WriteLine("Type in the grade or press enter to finish:");
                 var input = Console.ReadLine();
                 if (String.IsNullOrWhiteSpace(input))
                     break;
                 grades.Add(Convert.ToDouble(input)); 
             }
-        }
-        public void showGrades()
-        {
-            foreach (var grade in grades)
-                Console.Write(grade+" ");
         }
 
         public double calculateAverage()
