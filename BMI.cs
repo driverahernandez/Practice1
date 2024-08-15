@@ -18,7 +18,7 @@ namespace Practice1
 
             var bmi = calculateBMI(weight, height);
             Console.WriteLine("Body Mass Index: " + bmi);
-            Console.WriteLine("BMI: Category: " + getCategory(bmi));
+            Console.WriteLine("BMI Category: " + getCategory(bmi));
 
         }
 
